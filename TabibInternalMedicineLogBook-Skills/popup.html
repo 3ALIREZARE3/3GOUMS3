@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: Tahoma, sans-serif; width: 260px; padding: 15px; text-align: center; background-color: #f4f4f4; }
+    h3 { margin-top: 0; color: #333; }
+    label { display: block; margin-bottom: 5px; font-size: 12px; text-align: right; }
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: Tahoma;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    button:hover { background-color: #2980b9; }
+  </style>
+</head>
+<body>
+  <h3>تکمیل خودکار لاگ‌بوک</h3>
+  
+  <label for="skillSelect">انتخاب مهارت:</label>
+  <select id="skillSelect">
+    <option value="ascites">تپ مایع آسیت (Paracentesis)</option>
+    <option value="tr">معاینه رکتال (TR/DRE)</option>
+    <option value="abdominal">معاینه شکم</option>
+    <option value="ngt">تعبیه لوله بینی-معدی (NGT)</option>
+    <option value="thyroid">معاینه تیروئید</option>
+  </select>
+
+  <button id="fillBtn">پر کردن فرم</button>
+  <script src="popup.js"></script>
+</body>
+</html>

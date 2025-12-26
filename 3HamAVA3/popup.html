@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hamava Auto Evaluator</title>
+<style>
+  body { direction: rtl; font-family: sans-serif; width: 300px; padding: 12px; }
+  label { display:block; margin-top:8px; }
+  select, textarea, button { width:100%; box-sizing: border-box; margin-top:6px; }
+  .controls { display:flex; gap:8px; }
+  .controls button { flex:1; }
+</style>
+</head>
+<body>
+  <h3>اجرای خودکار فرم‌ها</h3>
+
+  <label>انتخاب جواب</label>
+  <select id="choiceSelect">
+    <option value="0">کاملا موافقم</option>
+    <option value="1">موافقم</option>
+    <option value="2">تا حدودی</option>
+    <option value="3">مخالفم</option>
+    <option value="4">کاملا مخالفم</option>
+    <option value="random">تصادفی</option>
+  </select>
+
+  <label>نظر برای مدرس</label>
+  <textarea id="commentTeacher" rows="2"></textarea>
+
+  <label>نظر برای گروه آموزشی</label>
+  <textarea id="commentAdmin" rows="2"></textarea>
+
+  <div class="controls">
+    <button id="startBtn">شروع</button>
+    <button id="stopBtn">توقف</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

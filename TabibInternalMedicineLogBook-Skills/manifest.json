@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Tabib Auto Filler",
+  "version": "1.0",
+  "description": "پر کردن خودکار فرم لاگ‌بوک سامانه طبیب، ساخته شده با عشق توسط ع.زارع 😘",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

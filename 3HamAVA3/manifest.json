@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Hamava Auto Evaluator",
+  "version": "1.3",
+  "description": "Auto-fill Hamava evaluation forms with selected answer or random mode. Includes auto-run for all teachers.",
+  "permissions": ["scripting", "storage", "activeTab"],
+  "host_permissions": ["*://*/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Hamava Auto Evaluator"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/Evaluation/RotationalStudentForms/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
